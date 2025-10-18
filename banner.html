@@ -1,0 +1,138 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EdgeOne SecTest Banner</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 20px;
+                background: white;
+                font-family: 'Arial', sans-serif;
+            }
+            .banner {
+                width: 800px;
+                height: 200px;
+                background: white;
+                position: relative;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+            .shield-icon {
+                width: 80px;
+                height: 80px;
+                margin-right: 30px;
+                position: relative;
+            }
+            .shield-outer {
+                width: 80px;
+                height: 80px;
+                border: 3px solid #00CED1;
+                border-radius: 8px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .shield-inner {
+                width: 60px;
+                height: 60px;
+                background: #1E90FF;
+                border-radius: 6px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            .shield-overlay {
+                width: 40px;
+                height: 40px;
+                background: #00BFFF;
+                border-radius: 4px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+            .checkmark {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .text-content {
+                flex: 1;
+            }
+            .company-name {
+                font-size: 36px;
+                font-weight: bold;
+                margin: 0;
+                line-height: 1;
+            }
+            .edgeone {
+                color: #1E3A8A;
+            }
+            .sectest {
+                color: #00CED1;
+            }
+            .tagline {
+                font-size: 18px;
+                color: #4A90E2;
+                margin: 8px 0 0 0;
+                font-weight: 500;
+            }
+            .hexagons {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                overflow: hidden;
+            }
+            .hexagon {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                background: rgba(0, 206, 209, 0.1);
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            }
+            .hex1 { top: 20px; right: 50px; }
+            .hex2 { top: 60px; right: 20px; }
+            .hex3 { bottom: 30px; right: 80px; }
+            .hex4 { bottom: 10px; right: 40px; }
+            .hex5 { top: 40px; right: 120px; }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="hexagons">
+                <div class="hexagon hex1"></div>
+                <div class="hexagon hex2"></div>
+                <div class="hexagon hex3"></div>
+                <div class="hexagon hex4"></div>
+                <div class="hexagon hex5"></div>
+            </div>
+            
+            <div class="shield-icon">
+                <div class="shield-outer"></div>
+                <div class="shield-inner"></div>
+                <div class="shield-overlay"></div>
+                <div class="checkmark">✓</div>
+            </div>
+            
+            <div class="text-content">
+                <h1 class="company-name">
+                    <span class="edgeone">EdgeOne</span> <span class="sectest">SecTest</span>
+                </h1>
+                <p class="tagline">Your one stop testing platform</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
